@@ -1,0 +1,8 @@
+.skill-card {
+  transition: all 0.4s;
+}
+
+.skill-card:hover {
+  transform: scale(1.03);
+  border: 1px solid #6A53A3;
+}

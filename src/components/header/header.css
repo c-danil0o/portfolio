@@ -1,0 +1,7 @@
+.logo-image {
+  transition: all 0.5s;
+}
+
+.logo-image:hover {
+  transform: scale(0.8) rotate(15deg);
+}

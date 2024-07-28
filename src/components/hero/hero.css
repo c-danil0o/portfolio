@@ -1,0 +1,16 @@
+.link-button {
+  color: red;
+
+}
+
+.link-button:hover {
+  transform: translate(0, -5px);
+  background-color: purple;
+}
+
+.social {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  /* margin-top: -400px; */
+}

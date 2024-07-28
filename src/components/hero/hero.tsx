@@ -32,20 +32,26 @@ export function Hero() {
 export function Social() {
   return (
     <div className='social flex flex-row flex-wrap dark text-3xl justify-evenly items-center  bg-violet-800 bg-opacity-5 backdrop-blur p-7 rounded-2xl mb-20'>
-      <Button variant="outline" className='text-neutral-400 rounded-2xl px-10 text-xl py-5 my-3 bg-black bg-opacity-30 link-button hover:bg-violet-900 w-52'>
-        <GitHubLogoIcon width="25px" height="25px" />
-        <span className='p-3 font-thin'>GitHub</span>
-      </Button>
+      <a href="https://www.github.com/c-danil0o">
+        <Button variant="outline" className='text-neutral-400 rounded-2xl px-10 text-xl py-5 my-3 bg-black bg-opacity-30 link-button hover:bg-violet-900 w-52'>
+          <GitHubLogoIcon width="25px" height="25px" />
+          <span className='p-3 font-thin'>GitHub</span>
+        </Button>
+      </a>
 
-      <Button variant="outline" className='text-neutral-400 rounded-2xl px-10 text-xl py-5 my-3 bg-black bg-opacity-30 link-button hover:bg-violet-900 w-52'>
-        <LinkedInLogoIcon width="25px" height="25px" />
-        <span className='p-3 font-thin'>LinkedIn</span>
-      </Button>
+      <a href="www.linkedin.com/in/danilo-c">
+        <Button variant="outline" className='text-neutral-400 rounded-2xl px-10 text-xl py-5 my-3 bg-black bg-opacity-30 link-button hover:bg-violet-900 w-52'>
+          <LinkedInLogoIcon width="25px" height="25px" />
+          <span className='p-3 font-thin'>LinkedIn</span>
+        </Button>
+      </a>
 
-      <Button variant="outline" className='text-neutral-400 rounded-2xl px-10 text-xl py-5 my-3 bg-black bg-opacity-30 link-button hover:bg-violet-900 w-52'>
-        <EnvelopeClosedIcon width="25px" height="25px" />
-        <span className='p-3 font-thin'>Email</span>
-      </Button>
+      <a href="mailto:danilo.cvijetic10@protonmail.ch">
+        <Button variant="outline" className='text-neutral-400 rounded-2xl px-10 text-xl py-5 my-3 bg-black bg-opacity-30 link-button hover:bg-violet-900 w-52'>
+          <EnvelopeClosedIcon width="25px" height="25px" />
+          <span className='p-3 font-thin'>Email</span>
+        </Button>
+      </a>
     </div>
   )
 }

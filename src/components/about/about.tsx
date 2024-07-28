@@ -46,9 +46,11 @@ export default function About() {
       </div>
       <button className="p-[3px] relative mb-10">
         <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-violet-800 rounded-lg" />
-        <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-neutral-300 hover:bg-transparent">
-          Get my resume
-        </div>
+        <a download="CV_Danilo_Cvijetic.pdf" href="../../assets/CV.pdf">
+          <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-neutral-300 hover:bg-transparent">
+            Get my resume
+          </div>
+        </a>
       </button>
     </div>
   )

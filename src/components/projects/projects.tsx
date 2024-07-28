@@ -4,10 +4,14 @@ import nosql from '../../assets/nosql.webp'
 import movie from '../../assets/movie-icon.png'
 import booking from '../../assets/staylogo.png'
 
-function Skeleton({ image }: any) {
+function Skeleton({ image, link }: any) {
   return (
     <div className="flex flex-1 w-full items-center min-h-40 max-h-40 rounded-xl border border-transparent justify-center bg-neutral-100 dark:bg-black">
-      <img className="h-full w-auto m-auto object-contain" src={image} alt="project-image" /></div>
+      <a href={link} className="h-full w-auto m-auto">
+        <img className="h-full w-auto m-auto object-contain" src={image} alt="project-image" />
+      </a>
+    </div>
+
   )
 }
 
@@ -16,26 +20,26 @@ export default function Projects() {
     {
       title: "Air Hockey AI Agent",
       description: "Reinforcement learning agent based on MADDPG neural network",
-      header: <Skeleton image={hockey} />,
+      header: <Skeleton image={hockey} link="https://github.com/c-danil0o/Air-Hockey-AI" />,
       className: "md:col-span-2",
     },
     {
       title: "NoSQL Engine",
       description: "Cassandra like NoSQL database built in Go with advanced data structures",
-      header: <Skeleton image={nosql} />,
+      header: <Skeleton image={nosql} link="https://github.com/c-danil0o/nosql-database" />,
       className: "md:col-span-1",
     },
     {
       title: "Movflix",
       description: "Cloud native Netflix clone deployed using AWS-CDK",
-      header: <Skeleton image={movie} />,
+      header: <Skeleton image={movie} link="https://github.com/c-danil0o/cloud-movies-app" />,
       className: "md:col-span-1",
     },
     {
       title: "Booking Clone",
       description:
         "Hotel booking application built using Spring Boot, Angular and Android app",
-      header: <Skeleton image={booking} />,
+      header: <Skeleton image={booking} link="https://github.com/c-danil0o/booking-android" />,
       className: "md:col-span-2",
     },
   ];

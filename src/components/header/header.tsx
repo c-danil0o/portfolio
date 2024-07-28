@@ -2,13 +2,7 @@ import './header.css'
 import { Button } from "../ui/button";
 import logo from '../../assets/logo-no-background.png'
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+import { Modal, ModalBody, ModalContent, ModalTrigger } from '../ui/animated-modal';
 
 export default function Header() {
   return (
@@ -21,21 +15,21 @@ export default function Header() {
         <Button variant="ghost" className="text-zinc-300 border-zinc-400"><a href="#Projects">projects</a></Button>
         <Button variant="ghost" className="text-zinc-300 border-zinc-400"><a href="#Contact">contact</a></Button>
       </div>
-      <div className="md:hidden">
-        <DropdownMenu>
-          <DropdownMenuTrigger>
-            <div className='md:hidden w-10'>
-              <HamburgerMenuIcon className="h-4 w-4 text-zinc-400" />
-            </div>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent>
-            <DropdownMenuLabel>home</DropdownMenuLabel>
-            <DropdownMenuItem>about</DropdownMenuItem>
-            <DropdownMenuItem>skills</DropdownMenuItem>
-            <DropdownMenuItem>projects</DropdownMenuItem>
-            <DropdownMenuItem>contact</DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
+      <div >
+        <Modal>
+          <ModalTrigger className="md:hidden w-10 group/modal-btn">
+            <HamburgerMenuIcon className="h-4 w-4 text-zinc-400" />
+          </ModalTrigger>
+          <ModalBody className='absolute w-4/5' >
+            <ModalContent >
+              <Button variant="ghost" className="text-zinc-300 border-zinc-400"><a href="#Hero">home</a></Button>
+              <Button variant="ghost" className="text-zinc-300 border-zinc-400"><a href="#About">about</a></Button>
+              <Button variant="ghost" className="text-zinc-300 border-zinc-400"><a href="#Skills">skills</a></Button>
+              <Button variant="ghost" className="text-zinc-300 border-zinc-400"><a href="#Projects">projects</a></Button>
+              <Button variant="ghost" className="text-zinc-300 border-zinc-400"><a href="#Contact">contact</a></Button>
+            </ModalContent>
+          </ModalBody>
+        </Modal>
       </div>
 
     </nav>

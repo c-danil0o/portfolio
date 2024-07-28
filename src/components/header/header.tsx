@@ -15,22 +15,20 @@ export default function Header() {
         <Button variant="ghost" className="text-zinc-300 border-zinc-400"><a href="#Projects">projects</a></Button>
         <Button variant="ghost" className="text-zinc-300 border-zinc-400"><a href="#Contact">contact</a></Button>
       </div>
-      <div >
-        <Modal>
-          <ModalTrigger className="md:hidden w-10 group/modal-btn">
-            <HamburgerMenuIcon className="h-4 w-4 text-zinc-400" />
-          </ModalTrigger>
-          <ModalBody className='absolute w-4/5' >
-            <ModalContent >
-              <Button variant="ghost" className="text-zinc-300 border-zinc-400"><a href="#Hero">home</a></Button>
-              <Button variant="ghost" className="text-zinc-300 border-zinc-400"><a href="#About">about</a></Button>
-              <Button variant="ghost" className="text-zinc-300 border-zinc-400"><a href="#Skills">skills</a></Button>
-              <Button variant="ghost" className="text-zinc-300 border-zinc-400"><a href="#Projects">projects</a></Button>
-              <Button variant="ghost" className="text-zinc-300 border-zinc-400"><a href="#Contact">contact</a></Button>
-            </ModalContent>
-          </ModalBody>
-        </Modal>
-      </div>
+      <Modal>
+        <ModalTrigger className="md:hidden w-10 group/modal-btn">
+          <HamburgerMenuIcon className="h-4 w-4 text-zinc-400" />
+        </ModalTrigger>
+        <ModalBody className='absolute w-4/5' >
+          <ModalContent >
+            <Button variant="ghost" className="text-zinc-300 border-zinc-400"><a href="#Hero">home</a></Button>
+            <Button variant="ghost" className="text-zinc-300 border-zinc-400"><a href="#About">about</a></Button>
+            <Button variant="ghost" className="text-zinc-300 border-zinc-400"><a href="#Skills">skills</a></Button>
+            <Button variant="ghost" className="text-zinc-300 border-zinc-400"><a href="#Projects">projects</a></Button>
+            <Button variant="ghost" className="text-zinc-300 border-zinc-400"><a href="#Contact">contact</a></Button>
+          </ModalContent>
+        </ModalBody>
+      </Modal>
 
     </nav>
   )

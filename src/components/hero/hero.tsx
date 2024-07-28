@@ -39,7 +39,7 @@ export function Social() {
         </Button>
       </a>
 
-      <a href="www.linkedin.com/in/danilo-c">
+      <a href="https://www.linkedin.com/in/danilo-c">
         <Button variant="outline" className='text-neutral-400 rounded-2xl px-10 text-xl py-5 my-3 bg-black bg-opacity-30 link-button hover:bg-violet-900 w-52'>
           <LinkedInLogoIcon width="25px" height="25px" />
           <span className='p-3 font-thin'>LinkedIn</span>

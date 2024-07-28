@@ -1,7 +1,7 @@
 import { Standard } from "@typebot.io/react";
 export default function Contact() {
   return (
-    <div id="Contact" className="h-fit w-full dark:bg-black bg-white bg-dot-violet-400/[0.8]  relative flex flex-col items-center">
+    <div id="Contact" className="h-fit w-full dark:bg-black bg-white bg-dot-violet-400/[0.8]  relative flex flex-col items-center pb-10">
       <div className="absolute w-full h-full">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       </div>
